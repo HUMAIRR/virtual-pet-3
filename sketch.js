@@ -30,7 +30,7 @@ function setup() {
   database = firebase.database();
   dog = createSprite(450,350,50,100);
   dog.addImage(DogImage);
-  dog.scale = 0.07;
+  dog.scale = 0.30;
 
   foodStock = database.ref('Food');
   foodStock.on("value",readStock);
